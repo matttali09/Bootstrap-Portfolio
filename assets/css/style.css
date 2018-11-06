@@ -245,14 +245,6 @@ header {
     margin-left: 56%;
     width: 0px!important;
 }
-.navbar-toggler {
-    padding: .25rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color: red;
-    border: 1px solid red;
-    border-radius: .25rem;
-}
 /* link styling */
 a:link {
     color: blue;
