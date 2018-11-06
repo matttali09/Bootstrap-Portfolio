@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
     line-height: 34px;
@@ -11,7 +11,7 @@ body {
 }
   
   /* general */
-  
+/*   
 .container {
     width: 100%;
     max-width: 960px;
@@ -48,11 +48,11 @@ h1 {
 h2,
 h3 {
     font-size: 22px;
-}
+} */
   
   /* header */
   
-#masthead {
+/* #masthead {
     z-index: 99;
     width: 100%;
     margin: 0 0 30px;
@@ -75,12 +75,12 @@ h3 {
     text-decoration: none;
     background: #4aaaa5;
 }
-  
+
 nav {
     float: right;
     margin-top: 25px;
 }
-  
+
 nav a {
     display: inline-block;
     padding-left: 15px;
@@ -93,27 +93,15 @@ nav a {
   
 nav a:first-child {
     border-left: 0 none;
-}
+} */
 
 /* link styling (have to be in this order to function properly/link and visited can be switched and technically link is not necessary to add as pseudo-ell) */
 
-a:link {
-    color: blue;
-}
-a:visited {
-    color: purple;
-}
-a:hover {
-    color: green;
-}
-a:active {
-    color: red;
-}
 
   
   /* footer */
   
-footer {
+/* footer {
     padding: 30px 0;
     clear: both;
     font-size: 12px;
@@ -129,11 +117,11 @@ h3, h2 {
     margin-bottom: 15px;
     line-height: 22px;
     border-bottom: 2px solid #eee;
-}
+} */
   
   /* main removed padding top due to not fixed header. fixed header was so tacky*/
   
-#main-container {
+/* #main-container {
     min-height: calc(100vh - 70px);
 }
   
@@ -145,11 +133,11 @@ h3, h2 {
     margin: 0 0 40px;
     background: #fff;
     border: 1px solid #ddd;
-}
+} */
   
   /* portfolio page */
   
-.work {
+/* .work {
     position: relative;
     float: left;
     width: 274px;
@@ -187,11 +175,11 @@ h3, h2 {
     height: auto;
     margin-top: 10px;
     margin-right: 25px;
-}
+} */
   
   /* contact page */
   
-#contact-form ul {
+/* #contact-form ul {
     margin-bottom: 20px;
 }
   
@@ -227,5 +215,45 @@ input[type=submit] {
     cursor: pointer;
     background: #4aaaa5;
     border: 0 none;
+} */
+
+/* FPO border divs */
+/* div {
+    border: 1px solid red;
+} */
+
+/* logo fixes */
+
+.container .navbar{
+    overflow: auto;
+    border-bottom: 2px solid #ccc;
 }
-  
+.col-6 .navbar-brand {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 24px;
+}
+.navbar-brand {
+    color: white !important;
+}
+/* navbar fixes */
+.navbar-nav {
+    margin-left: 56%;
+    width: 0px!important;
+}
+/* link styling */
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    color: green;
+}
+a:active {
+    color: red;
+}
+
+
