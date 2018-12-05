@@ -43,7 +43,7 @@ header {
     border-right: none;
 }
 /* link styling */
-a:link {
+/* a:link {
     color: blue;
 }
 a:visited {
@@ -54,7 +54,7 @@ a:hover {
 }
 a:active {
     color: red;
-}
+} */
 
 /* container fixes */
 .container {
@@ -76,7 +76,9 @@ a:active {
     margin: 20px 38px 25px;
     overflow: auto;
 }
-  
+img {
+    height: 266px;
+}
 .work img {
     width: 100%;
     border: 0 none;
@@ -158,5 +160,10 @@ a:active {
     }
     .nav3 {
         background-color: lightgray;
+    }
+
+    /* about me page */
+    #img-me {
+        width:95%
     }
 }
