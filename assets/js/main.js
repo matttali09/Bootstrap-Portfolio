@@ -9,5 +9,9 @@ $(function () {
         let emailBody = $("#message").val();
 
         location.href = "mailto:matttaliancich09@gmail.com?subject=" + emailName + ": " + emailSub + "&body=" + emailBody;
-    })
+    });
+
+    // materialize listeners
+    $(".dropdown-trigger").dropdown();
+    $('.parallax').parallax();
 });
