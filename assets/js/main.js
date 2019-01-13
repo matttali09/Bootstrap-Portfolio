@@ -1,5 +1,5 @@
 // doc ready
-$(function () {
+$(document).ready( () => {
     // submit button
     $("#submit-btn").click(function (event) {
         event.preventDefault();
@@ -12,6 +12,7 @@ $(function () {
     });
 
     // materialize listeners
+    $(".sidenav").sidenav();
     $(".dropdown-trigger").dropdown();
     $('.parallax').parallax();
 });

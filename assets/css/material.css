@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #777;
+}
+
+/* nav styling */
+.brand-logo {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 auto 0 10%;
+    padding: 0 30px;
+    background-color: #4aaaa5;
+    color: white;
+}
+nav {
+    background: white;
+}
+nav ul a {
+    border-right: .25px solid lightgray;
+    color: black
+}
+nav ul a:last-child {
+    border-right: none;
+}
+.navbar-toggler {
+    margin: 10px auto;
+}
+nav .sidenav-trigger {
+background: #4aaaa5;
+}
+
+/* parralax styling */
+.parallax-container {
+    height: 300px;
+}
+/* table of contents and link styling */
+.container a {
+    font-size: 17px;
+    line-height: 0;
+}
+.container .navigation {
+    display: inline-flex;
+}
+.container .navigation li {
+    margin: auto;
+}
+.container .navigation a {
+    background: white;
+    margin-right: 10%;
+}
+.navigation.row {
+    width: 100%;
+}
+.full {
+    width: 100%;
+}
+
+/* applies text to images and sets otherproperties such as height and margins */
+.work {
+    margin: 10px 0;
+    overflow: auto;
+}
+/* img {
+    height: 266px;
+} */
+.work img {
+    width: 70%;
+    border: 0 none;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 992px) {
+    nav .brand-logo {
+        left: 76%;
+        width:89%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    /* name styliing */
+    .brand-logo {
+        width: 100%;
+        margin-bottom: 24px;
+        padding: 0;
+        margin: 0;
+        background-size: fit-content;
+        right: 0;
+    }
+    .parallax-container {
+        height: 200px;
+    }
+    /* nav bar */
+    /* nav {
+        position: static;
+        line-height: 90px;
+        text-align: center;
+    }
+    nav:last-child {
+        margin-right: 0;
+    }
+    .navbar-nav { */
+        /* controls where the navbars will show up */
+        /* margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        width: auto!important;
+    } */
+}
