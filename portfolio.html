@@ -16,19 +16,13 @@
 </head>
 
 <body>
-
-    <!-- first parralax container with image above nav -->
-    <div class="parallax-container" style="height: 50px">
-        <div class="parallax"><img src="./assets/images/kingdom-hearts2.jpg" alt="parralax1"></div>
-    </div>
-
-    <!-- Header Banner added header and container div and expanded and messed with margins. -->
     <header>
-        <ul id="dropdown1" class="dropdown-content">
-            <li><a href="https://www.linkedin.com/in/matthew-taliancich-718970168/">LinkedIn</a></li>
-            <li class="divider"></li>
-            <li><a href="https://github.com/matttali09">GitHub</a></li>
-        </ul>
+        <!-- first parralax container with image above nav -->
+        <div class="parallax-container" style="height: 75px">
+            <div class="parallax"><img src="./assets/images/kingdom-hearts2.jpg" alt="parralax1"></div>
+        </div>
+
+        <!-- Navbar header. -->
         <nav>
             <div class="nav-wrapper">
                 <a href="index.html" class="brand-logo">Matthew Taliancich</a>
@@ -36,40 +30,85 @@
                 <ul class="right hide-on-med-and-down">
                     <li><a href="index.html">About Me</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
                     <!-- Dropdown Trigger -->
-                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                    <li><a class="dropdown-trigger" href="#" data-target="dropdown1">External<i
+                                class="material-icons right">arrow_drop_down</i></a></li>
+                </ul>
+                <!-- Dropdown Structure -->
+                <ul id="dropdown1" class="dropdown-content">
+                    <li><a href="https://www.linkedin.com/in/matthew-taliancich-718970168/" target="_blank">LinkedIn</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="https://github.com/matttali09" target="_blank">GitHub</a></li>
                 </ul>
             </div>
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
             <li><a href="index.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i
+                        class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
     </header>
 
-    <!-- first gif parralax after nav and before table of contents -->
+    <!-- neeeded display none to have the nav item dropdown work correctly -->
+    <a style="display: none" class="dropdown-trigger btn" href="#" data-target="dropdown1">Dropdown<i
+            class="material-icons right">arrow_drop_down</i></a>
+
+
+    <!-- first image parralax after nav and before table of contents -->
     <div class="parallax-container" style="height: 200px">
         <div class="parallax"><img src="./assets/images/hello.jpg" alt="parralax1"></div>
     </div>
 
-    <div class="container">
-        <h2 class="center">Portfolio</h2>
-        <h5 class="center">Table of Contents</h5>
-        <ul class="center">
-            <li><a href="#group-projects">Group Projects</a></li>
-            <li><a href="#express-projects">Express Projects</a></li>
-            <li><a href="#node-projects">NodeCLI Projects</a></li>
-            <li><a href="#other-projects">Other Projects</a></li>
-            <li><a href="#other-projects2">Other Projects2</a></li>
+    <div class="container center table-of-contents">
+        <h4 class="table-of-contents-head">Table of Contents</h4>
+        <li><a href="#react-projects">React Projects</a></li>
+        <li><a href="#group-projects">Group Projects</a></li>
+        <li><a href="#express-projects">Express Projects</a></li>
+        <li><a href="#node-projects">NodeCLI Projects</a></li>
+        <li><a href="#other-projects">Other Projects</a></li>
+        <li><a href="#other-projects2">Other Projects2</a></li>
         </ul>
     </div>
 
     <!-- second gif parralax after table of contents -->
     <div class="parallax-container" style="height: 150px">
         <div class="parallax"><img src="./assets/images/matrix-gif.gif" alt="parralax1"></div>
+    </div>
+
+    <!-- Group projects container -->
+    <div id="group-projects" class="container row full">
+        <div class="col s12 center">
+            <div class="work">
+                <a href="https://young-falls-79679.herokuapp.com/" target="_blank">
+                    <img src="./assets/images/rackers.png" alt="Rackers" style="height: 300px; width: 600px">
+                </a>
+                <p>Rackers is a full-stack MERN canvas gaming site.
+                    It uses express, passport, and mongoose to allow users allow users to sign up and login.
+                    Users can then play against each other or compare their high scores against
+                    other users on the site. Click
+                    <a href="https://github.com/matttali09/Movie-Rack" target="_blank">Here to go to the github
+                        repository for this project</a> or click on the icon to go to the website.
+                </p>
+            </div>
+        </div>
+        <div>
+            <ul class="center navigation row">
+                <li><a href="#react-projects">React</a></li>
+                <li><a href="#group-projects">Group</a></li>
+                <li><a href="#express-projects">Express</a></li>
+                <li><a href="#node-projects">NodeCLI</a></li>
+                <li><a href="#other-projects">Other</a></li>
+                <li><a href="#other-projects2">Other2</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- third gif parralax before group projects -->
+    <div class="parallax-container" style="height: 150px">
+        <div class="parallax"><img src="./assets/images/sunset.gif" alt="parralax1"></div>
     </div>
 
     <!-- Group projects container -->
@@ -81,8 +120,9 @@
                 </a>
                 <p>Movie Rack is a joint collaboration with Sam Clymer and Eric Figueroa.
                     It uses express passport and sequelize to allow users to make reviews and compare how
-                    the their ratings match up to other users on the site. Click 
-                    <a href="https://github.com/matttali09/Movie-Rack" target="_blank">Here to go to the github repository for this project</a> or click on the icon to go to the website.
+                    the their ratings match up to other users on the site. Click
+                    <a href="https://github.com/matttali09/Movie-Rack" target="_blank">Here to go to the github
+                        repository for this project</a> or click on the icon to go to the website.
                 </p>
             </div>
         </div>
@@ -93,17 +133,19 @@
                 </a>
                 <p>Snack attack is a joint collaboration with Winfield Huang and Danielle Wood
                     It uses express passport and sequelize to allow users to make reviews and compare how
-                    the their ratings match up to other users on the site. Click 
-                    <a href="https://github.com/matttali09/Snack-Attack" target="_blank">Here to go to the github repository for this project</a> or click on the icon to go to the website.
+                    the their ratings match up to other users on the site. Click
+                    <a href="https://github.com/matttali09/Snack-Attack" target="_blank">Here to go to the github
+                        repository for this project</a> or click on the icon to go to the website.
                 </p>
             </div>
         </div>
         <div>
             <ul class="center navigation row">
-                <li class="col s3"><a href="#group-projects">Group</a></li>
-                <li class="col s3"><a href="#express-projects">Express</a></li>
-                <li class="col s3"><a href="#node-projects">NodeCLI</a></li>
-                <li class="col s3"><a href="#other-projects">Other</a></li>
+                <li><a href="#react-projects">React</a></li>
+                <li><a href="#group-projects">Group</a></li>
+                <li><a href="#express-projects">Express</a></li>
+                <li><a href="#node-projects">NodeCLI</a></li>
+                <li><a href="#other-projects">Other</a></li>
                 <li><a href="#other-projects2">Other2</a></li>
             </ul>
         </div>
@@ -121,9 +163,10 @@
                 <a href="https://fathomless-brushlands-45350.herokuapp.com/" target="_blank">
                     <img src="./assets/images/scinews-scrapper.png" alt="SCINews Scrapper image">
                 </a>
-                <p>SCINews-Scrapper is a mongo scrapper app utilizing express-handlebars, 
-                    mongoDB, mongoose, axios, and cheerio. Click on the link 
-                    <a href="https://github.com/matttali09/SCINews-Scrapper" target="_blank">Here to go to the github repository for this project</a> or
+                <p>SCINews-Scrapper is a mongo scrapper app utilizing express-handlebars,
+                    mongoDB, mongoose, axios, and cheerio. Click on the link
+                    <a href="https://github.com/matttali09/SCINews-Scrapper" target="_blank">Here to go to the github
+                        repository for this project</a> or
                     click on the icon to go to the website
                 </p>
             </div>
@@ -131,12 +174,14 @@
         <div class="col s12 m4 center">
             <div class="work">
                 <a href="https://thawing-oasis-13821.herokuapp.com/" target="_blank">
-                    <img src="./assets/images/friend-finder.gif" alt="Friend Finder image" style="height: 110px; width: 110px; border: 1px solid black">
+                    <img src="./assets/images/friend-finder.gif" alt="Friend Finder image"
+                        style="height: 110px; width: 110px; border: 1px solid black">
                 </a>
                 <p>Friend finder is an application that allows user to take a quiz and
-                    find matches among others on the site using express and jquery with a schema to store 
+                    find matches among others on the site using express and jquery with a schema to store
                     store and display data. Click on the link
-                    <a href="https://github.com/matttali09/Friend-Finder" target="_blank">Here to go to the github repository for this project</a>
+                    <a href="https://github.com/matttali09/Friend-Finder" target="_blank">Here to go to the github
+                        repository for this project</a>
                     or click on the icon to go to the website
                 </p>
             </div>
@@ -144,17 +189,20 @@
         <div class="col s12 m4 center">
             <div class="work">
                 <a href="tps://frozen-cove-51176.herokuapp.com" target="_blank">
-                    <img src="./assets/images/burger-boss.png" alt="Burger Boss image" style="height: 110px; width: 110px;">
+                    <img src="./assets/images/burger-boss.png" alt="Burger Boss image"
+                        style="height: 110px; width: 110px;">
                 </a>
-                <p>Burger Boss is an application that utilizes full CRUD on a sql table with 
+                <p>Burger Boss is an application that utilizes full CRUD on a sql table with
                     express-handlebars. Click on the link
-                    <a href="https://github.com/matttali09/Burger-Boss" target="_blank">Here to go to the github repository for this project</a>
+                    <a href="https://github.com/matttali09/Burger-Boss" target="_blank">Here to go to the github
+                        repository for this project</a>
                     or click on the icon to go to the website
                 </p>
             </div>
         </div>
         <div>
             <ul class="center navigation row">
+                <li><a href="#react-projects">React</a></li>
                 <li><a href="#group-projects">Group</a></li>
                 <li><a href="#express-projects">Express</a></li>
                 <li><a href="#node-projects">NodeCLI</a></li>
@@ -174,28 +222,32 @@
         <div class="col s12 m6 center">
             <div class="work">
                 <a href="https://github.com/matttali09/bamazon" target="_blank">
-                    <img src="./assets/images/bamazon.png" alt="Bamazon image">
+                    <img src="./assets/images/bamazon.png" alt="Bamazon image" style="height: 250px; width: 400px">
                 </a>
-                <p>Bamazon is a Node.js, SQL, and inquirer based CLI app that works like amazon in the 
+                <p>Bamazon is a Node.js, SQL, and inquirer based CLI app that works like amazon in the
                     user's terminal. Click
-                    <a href="https://github.com/matttali09/bamazon" target="_blank">Here to go to the github repository for this project</a> or click on the icon.
+                    <a href="https://github.com/matttali09/bamazon" target="_blank">Here to go to the github repository
+                        for this project</a> or click on the icon.
                 </p>
             </div>
         </div>
         <div class="col s12 m6 center">
             <div class="work">
                 <a href="https://github.com/matttali09/liri-node-app" target="_blank">
-                    <img src="./assets/images/liri-node-app.png" alt="Liri App image">
+                    <img src="./assets/images/liri-node-app.png" alt="Liri App image"
+                        style="height: 250px; width: 400px">
                 </a>
-                <p>This LIRI node application allows users to search ombd, spotify, or 
+                <p>This LIRI node application allows users to search ombd, spotify, or
                     BandsInTown's API's all inside their console, also using inquirer and several user
-                    friendly CLI files as long as the user gets their own BandsInTown API key. Click 
-                    <a href="https://github.com/matttali09/liri-node-app" target="_blank">Here to go to the github repository for this project</a> or click on the icon.
+                    friendly CLI files as long as the user gets their own BandsInTown API key. Click
+                    <a href="https://github.com/matttali09/liri-node-app" target="_blank">Here to go to the github
+                        repository for this project</a> or click on the icon.
                 </p>
             </div>
         </div>
         <div>
             <ul class="center navigation row">
+                <li><a href="#react-projects">React</a></li>
                 <li><a href="#group-projects">Group</a></li>
                 <li><a href="#express-projects">Express</a></li>
                 <li><a href="#node-projects">NodeCLI</a></li>
@@ -217,9 +269,10 @@
                 <a href="https://matttali09.github.io/Zelda-OoT-Trivia-Game/" target="_blank">
                     <img src="./assets/images/zelda-trivia.PNG" alt="Zelda Trivia image" style="height: 150px;">
                 </a>
-                <p>This Zelda themed trivia games is one of my earlier works but I love the Zelda series 
+                <p>This Zelda themed trivia games is one of my earlier works but I love the Zelda series
                     so it is special to me. Click
-                    <a href="https://github.com/matttali09/Zelda-OoT-Trivia-Game" target="_blank">Here to go to the github repository for this project</a> or click on the icon to go to the website.
+                    <a href="https://github.com/matttali09/Zelda-OoT-Trivia-Game" target="_blank">Here to go to the
+                        github repository for this project</a> or click on the icon to go to the website.
                 </p>
             </div>
         </div>
@@ -228,29 +281,33 @@
                 <a href="https://matttali09.github.io/Psychic-Game/" target="_blank">
                     <img src="./assets/images/psychic-game.png" alt="Psychic Game image" style="height: 150px;">
                 </a>
-                <p>The Psychic letter guess game is simple, but demonstrates my jQuery 
+                <p>The Psychic letter guess game is simple, but demonstrates my jQuery
                     coding progression. Click
-                    <a href="https://github.com/matttali09/Psychic-Game" target="_blank">Here to go to the github repository for this project</a> or click on the icon to go to the website.
+                    <a href="https://github.com/matttali09/Psychic-Game" target="_blank">Here to go to the github
+                        repository for this project</a> or click on the icon to go to the website.
                 </p>
             </div>
         </div>
         <div class="col m4 center">
             <div class="work">
                 <a href="https://matttali09.github.io/giphy-pulling/" target="_blank">
-                    <img src="./assets/images/giphy-pulling.png" alt="Giphy Pulling image" style="border: 1px solid black; height: 150px;">
+                    <img src="./assets/images/giphy-pulling.png" alt="Giphy Pulling image"
+                        style="border: 1px solid black; height: 150px;">
                 </a>
-                <p>Giphy Pulling is a simple project that demonstrates my api pulling 
+                <p>Giphy Pulling is a simple project that demonstrates my api pulling
                     and dynamically apply the received information. Click
-                    <a href="https://github.com/matttali09/giphy-pulling" target="_blank">Here to go to the github repository for this project</a> or click on the icon to go to the website.
+                    <a href="https://github.com/matttali09/giphy-pulling" target="_blank">Here to go to the github
+                        repository for this project</a> or click on the icon to go to the website.
                 </p>
             </div>
         </div>
         <div>
             <ul class="center navigation row">
+                <li><a href="#react-projects">React</a></li>
                 <li><a href="#group-projects">Group</a></li>
                 <li><a href="#express-projects">Express</a></li>
                 <li><a href="#node-projects">NodeCLI</a></li>
-                <li><a href="#other-projects">Other1</a></li>
+                <li><a href="#other-projects">Other</a></li>
                 <li><a href="#other-projects2">Other2</a></li>
             </ul>
         </div>
@@ -266,11 +323,13 @@
         <div class="col m4 center">
             <div class="work">
                 <a href="https://matttali09.github.io/Kingdom-Hearts-Word-Guess-Game/" target="_blank">
-                    <img src="./assets/images/kingdom-hearts.PNG" alt="Kingdom Hearts Game image" style="height: 150px;">
+                    <img src="./assets/images/kingdom-hearts.PNG" alt="Kingdom Hearts Game image"
+                        style="height: 150px;">
                 </a>
-                <p>Kingdom Hearts Word Guess Game demonstrates my ability to come up with solutions in jQuery. 
-                    Click 
-                    <a href="https://github.com/matttali09/Kingdom-Hearts-Word-Guess-Game" target="_blank">Here to go to the github repository for this project</a> or click on the icon to go to the website.
+                <p>Kingdom Hearts Word Guess Game demonstrates my ability to come up with solutions in jQuery.
+                    Click
+                    <a href="https://github.com/matttali09/Kingdom-Hearts-Word-Guess-Game" target="_blank">Here to go
+                        to the github repository for this project</a> or click on the icon to go to the website.
                 </p>
             </div>
         </div>
@@ -279,9 +338,10 @@
                 <a href="https://matttali09.github.io/Train-Schedule/" target="_blank">
                     <img src="./assets/images/train-schedule.PNG" alt="Train Schedule image" style="height: 150px;">
                 </a>
-                <p>Train schedule is a simple project that demonstrates my ability to work with a 
-                        database system in this case Firebase. Click
-                    <a href="https://github.com/matttali09/Train-Schedule" target="_blank">Here to go to the github repository for this project</a> or click on the icon to go to the website.
+                <p>Train schedule is a simple project that demonstrates my ability to work with a
+                    database system in this case Firebase. Click
+                    <a href="https://github.com/matttali09/Train-Schedule" target="_blank">Here to go to the github
+                        repository for this project</a> or click on the icon to go to the website.
                 </p>
             </div>
         </div>
@@ -290,18 +350,20 @@
                 <a href="https://matttali09.github.io/Star-Wars-RPG/" target="_blank">
                     <img src="./assets/images/star-wars-rpg.PNG" alt="Star Wars Game image" style="height: 150px;">
                 </a>
-                <p>Star Wars RPG demonstrates jQuery targeting that I am planning on fixing with my 
+                <p>Star Wars RPG demonstrates jQuery targeting that I am planning on fixing with my
                     increased knowledge when I find extra time soon. Click
-                    <a href="https://github.com/matttali09/Star-Wars-RPG" target="_blank">Here to go to the github repository for this project</a> or click on the icon to go to the website.
+                    <a href="https://github.com/matttali09/Star-Wars-RPG" target="_blank">Here to go to the github
+                        repository for this project</a> or click on the icon to go to the website.
                 </p>
             </div>
         </div>
         <div>
             <ul class="center navigation row">
+                <li><a href="#react-projects">React</a></li>
                 <li><a href="#group-projects">Group</a></li>
                 <li><a href="#express-projects">Express</a></li>
                 <li><a href="#node-projects">NodeCLI</a></li>
-                <li><a href="#other-projects">Other1</a></li>
+                <li><a href="#other-projects">Other</a></li>
                 <li><a href="#other-projects2">Other2</a></li>
             </ul>
         </div>
@@ -314,17 +376,41 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="contain">
-            <p class="center">Copyright &copy;</p>
-        </div>
+        <form class="row">
+            <ul class="col m8 s12" style="margin: 15px 0">
+                <li>
+                    <div class="form-group input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="name" type="text" class="validate form-control" id="name" name="name"
+                            data-length="100">
+                        <label for="name">Name</label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-group input-field">
+                        <label for="subject">Email Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject">
+                    </div>
+                </li>
+                <li>
+                    <div class="form-group input-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                    </div>
+                </li>
+            </ul>
+            <a id="submit-btn" class="submit-btn waves-effect waves-light btn col m4 s12"><i
+                    class="material-icons left">cloud</i>Contact
+                Me.<i class="material-icons right">send</i></a>
+            <p class="col m4 s12 footer-disclaimer">(information will be transfered to your default mail app)</p>
+        </form>
     </footer>
 
     <!-- ======================================== JavaScript Links =========================================== -->
 
-
     <!-- Jquery CDN Link -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!-- Materialize JavaScript CDN link. Compiled and minified- -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 

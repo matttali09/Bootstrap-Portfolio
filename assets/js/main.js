@@ -5,8 +5,11 @@ $(document).ready( () => {
         event.preventDefault();
 
         let emailName = $("#name").val().trim();
-        let emailSub = $("#subject").val();
+        let emailSub = $("#subject").val().trim();
         let emailBody = $("#message").val();
+        emailName.replace(" ", "%20")
+        emailSub.replace(" ", "%20")
+        emailBody.replace(" ", "%20")
 
         location.href = "mailto:matttaliancich09@gmail.com?subject=" + emailName + ": " + emailSub + "&body=" + emailBody;
     });
@@ -14,5 +17,6 @@ $(document).ready( () => {
     // materialize listeners
     $(".sidenav").sidenav();
     $(".dropdown-trigger").dropdown();
-    $('.parallax').parallax();
+    $(".parallax").parallax();
+    $("input#name, textarea#message").characterCounter();
 });
