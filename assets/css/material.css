@@ -54,6 +54,15 @@ nav ul a:active {
 .dropdown-content li>a:active {
     background-color: var(--dark-blue-from-KH-img);
 }
+.sidenav li>a {
+    color: midnightblue;
+}
+.sidenav li>a:hover {
+    background-color: var(--materialize-light-blue);
+}
+.sidenav li>a:active {
+    background-color: var(--dark-blue-from-KH-img);
+}
 
 .navbar-toggler {
     margin: 10px auto;
