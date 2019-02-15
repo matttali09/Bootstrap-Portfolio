@@ -63,6 +63,10 @@ nav ul a:active {
 .sidenav li>a:active {
     background-color: var(--dark-blue-from-KH-img);
 }
+/* github and linkedin icon styling */
+.dropdown-content li>a>i {
+    margin: 0;
+}
 
 .navbar-toggler {
     margin: 10px auto;
