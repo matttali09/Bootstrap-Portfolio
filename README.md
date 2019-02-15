@@ -7,4 +7,4 @@ My personal Portfolio that describes myself and my current goals.
 
 Also my ongoing and completed projects portfolio page and a contact me footer on both pages.
 
-![screenshot1](assets/images/screenshot1.PNG?raw=true "screenshot1")
+![screenshot2](assets/images/screenshot2.PNG?raw=true "screenshot2")
