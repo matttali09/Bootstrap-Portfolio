@@ -209,7 +209,7 @@ input[type=text]:not(.browser-default):focus.valid + i {
 .footer-disclaimer {
     background-color: #2b3f3f;
     color: chartreuse;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 /* media queries */
