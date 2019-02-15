@@ -214,19 +214,13 @@ input[type=text]:not(.browser-default):focus.valid + i {
 
 /* media queries */
 
-@media only screen and (max-width: 992px) {
-    nav .brand-logo {
-        left: 76%;
-        width: 89%;
-    }
-}
-
 @media only screen and (max-width: 640px) {
     /* name styliing */
     nav .brand-logo {
-        left: 61%;
+        float: right;
         font-size: 20px;
-        width: fit-content;
+        margin: auto;
+        padding: 0 1px;
     }
     /* parrallax correction for my gif heights */
     .parallax-container {
