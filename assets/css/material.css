@@ -13,6 +13,9 @@ p {
     background: white;
     line-height: 150%;
 }
+li a {
+    font-size: 18px;
+}
 
 /* nav styling */
 
@@ -166,6 +169,7 @@ nav .sidenav-trigger {
 }
 
 .navigation.row {
+    margin-top: 20px;
     width: 100%;
 }
 
