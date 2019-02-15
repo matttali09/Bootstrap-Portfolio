@@ -56,6 +56,7 @@ nav ul a:active {
 }
 .sidenav li>a {
     color: midnightblue;
+    border-bottom: 1px solid midnightblue;
 }
 .sidenav li>a:hover {
     background-color: var(--materialize-light-blue);
