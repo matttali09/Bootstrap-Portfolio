@@ -188,6 +188,13 @@ nav .sidenav-trigger {
     width: 70%;
     border: 0 none;
     opacity: 0.9;
+    padding: 10px;
+}
+.work img:hover {
+    transition: .20s ease;
+    box-shadow: 0 0 20px #FFD64F;
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 /* footer styling */
