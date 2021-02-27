@@ -252,6 +252,12 @@ input[type=text]:not(.browser-default):focus.valid + i {
     .parallax-container {
         height: 200px;
     }
+    .container .navigation {
+        display: block;
+    }
+    .container .navigation li {
+        margin-bottom: 13px;
+    }
     /* margin correction for submit button */
     #submit-btn {
         margin-top: 20px;
